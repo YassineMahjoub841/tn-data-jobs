@@ -1,0 +1,39 @@
+[project]
+name = "tn-data-jobs"
+version = "0.1.0"
+description = "Tunisia & France data/AI job market tracker"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "pydantic>=2.6",
+    "python-dotenv>=1.0",
+    "google-cloud-bigquery>=3.17",
+    "pandas>=2.2",
+]
+
+[project.optional-dependencies]
+dashboard = [
+    "streamlit>=1.32",
+    "plotly>=5.19",
+]
+dev = [
+    "ruff>=0.3",
+    "jupyter>=1.0",
+    "ipykernel>=6.29",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ingest*", "dashboard*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP"]
