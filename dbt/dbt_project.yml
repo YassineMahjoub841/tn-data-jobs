@@ -1,0 +1,43 @@
+name: tn_data_jobs
+version: "1.0.0"
+config-version: 2
+
+profile: tn_data_jobs
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  tn_data_jobs:
+    skills:
+      +column_types:
+        canonical_name: varchar
+        category: varchar
+        variants: varchar
+
+models:
+  tn_data_jobs:
+    staging:
+      +materialized: view
+      +schema: staging
+    intermediate:
+      +materialized: ephemeral
+    marts:
+      +materialized: table
+      +schema: marts
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: tanitjobs
+      - name: france_travail

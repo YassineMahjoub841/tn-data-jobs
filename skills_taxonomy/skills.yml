@@ -1,0 +1,416 @@
+# skills.yml — Curated skills taxonomy
+#
+# Schema:
+#   canonical_name: the normalised skill label stored in the database
+#   category:       broad grouping (language, framework, platform, …)
+#   variants:       pipe-separated aliases used for matching in job descriptions
+
+skills:
+  # ── Programming languages ────────────────────────────────────────────────────
+  - canonical_name: Python
+    category: language
+    variants: python|python3|py
+
+  - canonical_name: SQL
+    category: language
+    variants: sql|structured query language
+
+  - canonical_name: R
+    category: language
+    variants: " r |rstats|r programming|r language"
+
+  - canonical_name: Scala
+    category: language
+    variants: scala
+
+  - canonical_name: Java
+    category: language
+    variants: java
+
+  - canonical_name: Go
+    category: language
+    variants: golang|go language
+
+  - canonical_name: Julia
+    category: language
+    variants: julia
+
+  - canonical_name: Rust
+    category: language
+    variants: rust|rustlang
+
+  - canonical_name: C++
+    category: language
+    variants: c++|cpp|c plus plus
+
+  - canonical_name: JavaScript
+    category: language
+    variants: javascript|js|node.js|nodejs
+
+  - canonical_name: TypeScript
+    category: language
+    variants: typescript|ts
+
+  - canonical_name: Shell
+    category: language
+    variants: bash|shell script|sh|zsh|ksh
+
+  # ── Data engineering ─────────────────────────────────────────────────────────
+  - canonical_name: Apache Spark
+    category: data_engineering
+    variants: spark|pyspark|apache spark|spark streaming
+
+  - canonical_name: Apache Kafka
+    category: data_engineering
+    variants: kafka|apache kafka|confluent kafka
+
+  - canonical_name: Apache Airflow
+    category: data_engineering
+    variants: airflow|apache airflow
+
+  - canonical_name: dbt
+    category: data_engineering
+    variants: dbt|data build tool
+
+  - canonical_name: Apache Flink
+    category: data_engineering
+    variants: flink|apache flink
+
+  - canonical_name: Apache Beam
+    category: data_engineering
+    variants: beam|apache beam|dataflow
+
+  - canonical_name: Dagster
+    category: data_engineering
+    variants: dagster
+
+  - canonical_name: Prefect
+    category: data_engineering
+    variants: prefect
+
+  - canonical_name: Luigi
+    category: data_engineering
+    variants: luigi
+
+  - canonical_name: Apache NiFi
+    category: data_engineering
+    variants: nifi|apache nifi
+
+  - canonical_name: Debezium
+    category: data_engineering
+    variants: debezium|cdc|change data capture
+
+  # ── Databases & storage ───────────────────────────────────────────────────────
+  - canonical_name: PostgreSQL
+    category: database
+    variants: postgresql|postgres|pg
+
+  - canonical_name: MySQL
+    category: database
+    variants: mysql|mariadb
+
+  - canonical_name: MongoDB
+    category: database
+    variants: mongodb|mongo
+
+  - canonical_name: Redis
+    category: database
+    variants: redis
+
+  - canonical_name: Elasticsearch
+    category: database
+    variants: elasticsearch|elastic search|opensearch
+
+  - canonical_name: Cassandra
+    category: database
+    variants: cassandra|apache cassandra
+
+  - canonical_name: DuckDB
+    category: database
+    variants: duckdb
+
+  - canonical_name: SQLite
+    category: database
+    variants: sqlite
+
+  - canonical_name: ClickHouse
+    category: database
+    variants: clickhouse
+
+  - canonical_name: Snowflake
+    category: cloud_warehouse
+    variants: snowflake
+
+  - canonical_name: BigQuery
+    category: cloud_warehouse
+    variants: bigquery|google bigquery|bq
+
+  - canonical_name: Redshift
+    category: cloud_warehouse
+    variants: redshift|amazon redshift|aws redshift
+
+  - canonical_name: Databricks
+    category: cloud_warehouse
+    variants: databricks
+
+  - canonical_name: Delta Lake
+    category: cloud_warehouse
+    variants: delta lake|delta table|delta format
+
+  - canonical_name: Apache Hive
+    category: cloud_warehouse
+    variants: hive|apache hive|hiveql
+
+  - canonical_name: Presto
+    category: cloud_warehouse
+    variants: presto|prestodb|trino|trinodb
+
+  # ── Cloud platforms ───────────────────────────────────────────────────────────
+  - canonical_name: AWS
+    category: cloud
+    variants: aws|amazon web services|amazon cloud
+
+  - canonical_name: Google Cloud Platform
+    category: cloud
+    variants: gcp|google cloud|google cloud platform
+
+  - canonical_name: Azure
+    category: cloud
+    variants: azure|microsoft azure|azure cloud
+
+  - canonical_name: AWS S3
+    category: cloud
+    variants: s3|amazon s3|aws s3
+
+  - canonical_name: AWS Glue
+    category: cloud
+    variants: aws glue|glue etl
+
+  - canonical_name: AWS Lambda
+    category: cloud
+    variants: aws lambda|lambda function
+
+  - canonical_name: Azure Data Factory
+    category: cloud
+    variants: azure data factory|adf
+
+  - canonical_name: Google Pub/Sub
+    category: cloud
+    variants: pubsub|pub/sub|google pub sub
+
+  # ── Machine learning & AI ─────────────────────────────────────────────────────
+  - canonical_name: Machine Learning
+    category: ml
+    variants: machine learning|ml|apprentissage automatique
+
+  - canonical_name: Deep Learning
+    category: ml
+    variants: deep learning|dl|apprentissage profond
+
+  - canonical_name: Natural Language Processing
+    category: ml
+    variants: nlp|natural language processing|text mining|traitement du langage
+
+  - canonical_name: Computer Vision
+    category: ml
+    variants: computer vision|cv|image recognition|object detection
+
+  - canonical_name: Large Language Models
+    category: ml
+    variants: llm|large language model|gpt|llama|mistral|chatgpt
+
+  - canonical_name: Reinforcement Learning
+    category: ml
+    variants: reinforcement learning|rl|q-learning
+
+  - canonical_name: TensorFlow
+    category: ml_framework
+    variants: tensorflow|tf|keras
+
+  - canonical_name: PyTorch
+    category: ml_framework
+    variants: pytorch|torch
+
+  - canonical_name: Scikit-learn
+    category: ml_framework
+    variants: scikit-learn|sklearn|scikit learn
+
+  - canonical_name: Hugging Face
+    category: ml_framework
+    variants: hugging face|huggingface|transformers
+
+  - canonical_name: XGBoost
+    category: ml_framework
+    variants: xgboost|xgb
+
+  - canonical_name: LightGBM
+    category: ml_framework
+    variants: lightgbm|lgbm
+
+  - canonical_name: MLflow
+    category: mlops
+    variants: mlflow
+
+  - canonical_name: Kubeflow
+    category: mlops
+    variants: kubeflow
+
+  - canonical_name: BentoML
+    category: mlops
+    variants: bentoml
+
+  - canonical_name: Weights & Biases
+    category: mlops
+    variants: weights & biases|wandb|weights and biases
+
+  # ── Data visualisation ───────────────────────────────────────────────────────
+  - canonical_name: Tableau
+    category: visualisation
+    variants: tableau|tableau desktop|tableau server
+
+  - canonical_name: Power BI
+    category: visualisation
+    variants: power bi|powerbi|microsoft power bi
+
+  - canonical_name: Looker
+    category: visualisation
+    variants: looker|looker studio|google data studio
+
+  - canonical_name: Grafana
+    category: visualisation
+    variants: grafana
+
+  - canonical_name: Metabase
+    category: visualisation
+    variants: metabase
+
+  - canonical_name: Streamlit
+    category: visualisation
+    variants: streamlit
+
+  - canonical_name: Plotly
+    category: visualisation
+    variants: plotly|plotly dash|dash
+
+  - canonical_name: Matplotlib
+    category: visualisation
+    variants: matplotlib|pyplot
+
+  - canonical_name: Seaborn
+    category: visualisation
+    variants: seaborn
+
+  # ── DevOps / infrastructure ──────────────────────────────────────────────────
+  - canonical_name: Docker
+    category: devops
+    variants: docker|dockerfile|docker-compose|docker compose
+
+  - canonical_name: Kubernetes
+    category: devops
+    variants: kubernetes|k8s|kubectl|helm
+
+  - canonical_name: Terraform
+    category: devops
+    variants: terraform|hcl
+
+  - canonical_name: CI/CD
+    category: devops
+    variants: ci/cd|cicd|continuous integration|continuous deployment|github actions|gitlab ci|jenkins
+
+  - canonical_name: Git
+    category: devops
+    variants: git|github|gitlab|bitbucket|version control
+
+  - canonical_name: Linux
+    category: devops
+    variants: linux|unix|ubuntu|centos|debian
+
+  # ── Data concepts ─────────────────────────────────────────────────────────────
+  - canonical_name: ETL
+    category: concept
+    variants: etl|extract transform load|elt|extract load transform
+
+  - canonical_name: Data Warehouse
+    category: concept
+    variants: data warehouse|datawarehouse|entrepôt de données
+
+  - canonical_name: Data Lake
+    category: concept
+    variants: data lake|datalake|lac de données
+
+  - canonical_name: Data Lakehouse
+    category: concept
+    variants: data lakehouse|lakehouse
+
+  - canonical_name: Data Mesh
+    category: concept
+    variants: data mesh
+
+  - canonical_name: Data Governance
+    category: concept
+    variants: data governance|gouvernance des données|data quality|qualité des données
+
+  - canonical_name: Data Modeling
+    category: concept
+    variants: data modeling|data modelling|modélisation des données|dimensional modeling|star schema
+
+  - canonical_name: Stream Processing
+    category: concept
+    variants: stream processing|real-time processing|traitement temps réel|event streaming
+
+  - canonical_name: Batch Processing
+    category: concept
+    variants: batch processing|traitement par lots
+
+  - canonical_name: REST API
+    category: concept
+    variants: rest api|restful|api rest|http api
+
+  - canonical_name: GraphQL
+    category: concept
+    variants: graphql
+
+  - canonical_name: Microservices
+    category: concept
+    variants: microservices|micro-services|microservice architecture
+
+  # ── Soft / domain skills ──────────────────────────────────────────────────────
+  - canonical_name: Statistics
+    category: domain
+    variants: statistics|statistiques|statistique|statistical analysis|analyse statistique
+
+  - canonical_name: A/B Testing
+    category: domain
+    variants: a/b testing|ab testing|experimentation|split testing
+
+  - canonical_name: Data Storytelling
+    category: domain
+    variants: data storytelling|storytelling|data communication
+
+  - canonical_name: Agile
+    category: soft
+    variants: agile|scrum|kanban|sprint
+
+  - canonical_name: Communication
+    category: soft
+    variants: communication|présentation|reporting
+
+  - canonical_name: Problem Solving
+    category: soft
+    variants: problem solving|problem-solving|résolution de problèmes
+
+  - canonical_name: Teamwork
+    category: soft
+    variants: teamwork|travail en équipe|collaboration
+
+  - canonical_name: English
+    category: language_spoken
+    variants: anglais|english|english language
+
+  - canonical_name: French
+    category: language_spoken
+    variants: français|french|langue française
+
+  - canonical_name: Arabic
+    category: language_spoken
+    variants: arabe|arabic|langue arabe
